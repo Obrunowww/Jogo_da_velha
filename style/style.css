@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(160deg ,rgba(255, 34, 34, 0.781), rgb(4, 121, 255));
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    font-size: 30px;
+    
+}
+.texto button{
+    margin-top: 10px;
+    padding: 5px;
+    border: solid rgb(56, 55, 55) 1px; 
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(4, 121, 255);
+    background-color: rgba(255, 34, 34, 0.781);
+    cursor: pointer;
+}
+.texto button:hover{
+    color: rgba(255, 34, 34, 0.781);
+    background-color: rgb(4, 121, 255);
+    scale: 1.1;
+}
+.jogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    box-shadow: 5px 5px 10px  rgba(3, 3, 3, 0.829);
+    
+}
+
+.jogodavelha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    background: whitesmoke;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.829);
+    
+}
+.jogodavelha:hover{
+    scale: 1.12;
+}
+
+.bola{
+    background-color: rgb(4, 121, 255);
+    color: rgba(255, 34, 34, 0.781);
+    scale: 1.12;
+    cursor: no-drop;
+}
+.bola:hover{
+    scale: 1.0;
+}
+.x{
+    background-color: rgba(255, 34, 34, 0.781);
+    color: rgb(4, 121, 255);
+    scale:1.0;
+    cursor: no-drop;
+}
+.x:hover{
+    scale: 1.12;
+}
+.final{
+    display: none;
+}
