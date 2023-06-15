@@ -40,14 +40,21 @@ const checarEmpate = () => {
 
 
 function o() {
-  this.innerHTML = "O";
-  this.classList.add("bola");
+  if (!this.classList.contains("x")) {
+    this.innerHTML = "O";
+    this.classList.add("bola");
+
+  }
 }
 
 function x() {
-  this.innerHTML = "X";
-  this.classList.add("x");
+  if (!this.classList.contains("bola")) {
+    this.innerHTML = "X";
+    this.classList.add("x");
+    
+  }
 }
+
 
 const trocaTurno = () => {
   eVezDoCirculo = !eVezDoCirculo;
