@@ -12,10 +12,18 @@ const combinacoesDeVitoria = [
   [0, 3, 6], [1, 4, 7], [2, 5, 8],
   [0, 4, 8], [2, 4, 6]
 ];
+
+function começarJogo(){
+  jogadadoDoJogo.forEach(quadrado => {
+    quadrado.addEventListener("click", clickar, {once:true} );
+  });
+}
+
 function restartar(){
     jogadadoDoJogo.forEach(jogada =>{
         jogada.classList.remove("x", "bola");
         jogada.innerHTML = ""
+        começarJogo()
     });
 
     eVezDoCirculo =false;
@@ -87,7 +95,5 @@ function clickar() {
 }
 
 jogarDnv.addEventListener("click", restartar);
+começarJogo()
 
-jogadadoDoJogo.forEach(quadrado => {
-  quadrado.addEventListener("click", clickar, );
-});
